@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Bem-vindo ao meu Currículo</h1>
-        <p>Site criado com os conhecimentos do módulo 1 e 2 do curso de HTML5 e CSS3.</p>
+        <p>Desenvolvedor em transição de carreira | Química & Tecnologia</p>
+        <nav class="navegacao">
+            <a href="#resumo">🏠 Início</a>
+            <a href="#habilidades">🛠️ Habilidades</a>
+            <a href="#portfolio">📂 Portfólio</a>
+            <a href="#sobre">👤 Sobre Mim</a>
+            <a href="#visualizar-curriculo">📄 Baixar Currículo</a>
+        </nav>
     </header>
-    <nav>
-        <a href="sobre.html">Sobre mim</a>
-        <a href="galeria.html">Galeria</a>
-    </nav>
+
     <main>
-        <section class="apresentacao">
+        <section id="resumo" class="apresentacao">
             <h2>Quem sou eu?</h2>
             <p>
                 Olá! Meu nome é <strong>Emanuel Gomes Machado</strong> e sou um profissional com formação em Química e uma forte base em habilidades analíticas. Ao longo da minha carreira, trabalhei em laboratório de análise, onde desenvolvi uma excelente capacidade de resolução de problemas, atenção a detalhes e foco em dados, habilidades essas que tenho aplicado em projetos de desenvolvimento.
@@ -26,29 +30,45 @@
                 Atualmente, estou fazendo a transição de carreira para a área de Desenvolvimento de Software. Já completei cursos de Lógica de Programação e aprendi o básico de diversas linguagens, como C, C#, C++, Java, e Python. Atualmente, estou estudando HTML5 e CSS3 e planejo iniciar um curso de JavaScript em breve. Estou buscando integrar minhas habilidades analíticas com o desenvolvimento de software, aproveitando a experiência prática adquirida em um ambiente de laboratório para criar soluções inovadoras.
             </p>
         </section>
-        <section class="habilidades">
+
+        <section id="habilidades" class="habilidades">
             <h2>Habilidades</h2>
-            <ul>
-                <li><strong>Desenvolvimento Front-End:</strong> HTML5, CSS3, JavaScript (em aprendizado);</li>
-                <li><strong>Programação:</strong> C, C#, C++, Java, Python (básico);</li>
+            <ul class="habilidades-lista">
+                <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (em aprendizado);</li>
+                <li><strong>Back-End:</strong> Noções básicas de PHP e Banco de Dados;</li>
+                <li><strong>Programação Geral:</strong> C, C#, C++, Java, Python (básico);</li>
+                <li><strong>Ferramentas e Controle de Versão:</strong> Git e GitHub;</li>
                 <li><strong>Habilidades Analíticas:</strong> Resolução de problemas, análise de dados e atenção a detalhes;</li>
-                <li><strong>Controle de Versão:</strong> Git e GitHub;</li>
-                <li><strong>Design Responsivo:</strong> Experiência com layouts adaptáveis e interfaces amigáveis;</li>
+                <li><strong>Design Responsivo:</strong> Criação de layouts adaptáveis e interfaces amigáveis.</li>
             </ul>
         </section>
-        <section class="foto">
-            <h2>Minha Foto</h2>
-            <img src="imagens/foto.jpeg" alt="Emanuel G. Machado" width="250">
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portfólio</h2>
+            <p>Aqui estarão os projetos desenvolvidos...</p>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre mim</h2>
+            <img src="imagens/minha-foto.jpeg" alt="Emanuel G. Machado" width="250">
+        </section>
+        <section id="visualizar-curriculo" class="curriculo">
+            <h2>📄 Visualizar Currículo</h2>
+            <div class="curriculo-box">
+                <iframe src="arquivos/CURRICULO_EMANUEL_MACHADO.pdf" frameborder="0"></iframe>
+            </div>
         </section>
     </main>
+
     <footer>
         Desenvolvedor <strong>Emanuel G. Machado</strong>, com ajuda do <a href="https://www.youtube.com/cursoemvideo" target="_blank">Curso em vídeo</a> do <a href="https://github.com/gustavoguanabara" target="_blank">Professor Gustavo Guanabara.</a>
-        <div class="contatos">
-            <a href="https://github.com/EmanuelGMachado" target="_blank">GitHub <img src="imagens/icone-github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/emanuel-machado-48312321b/" target="_blank">Linkedin <img src="imagens/icone-linkedin.png" alt="Linkedin"></a>
-            <a href="https://www.instagram.com/egm.ch/" target="_blank">Instagram <img src="imagens/icone-instagram.png" alt="Instagram"></a>
-            <p>Email: emanueltbg@hotmail.com</p>
-            <p>WhatsApp: (42) 98831-0277</p>
+        <div>
+            <a href="https://github.com/EmanuelGMachado" target="_blank" class="icon github">GitHub</a>
+            <a href="https://www.linkedin.com/in/emanuel-machado-48312321b/" target="_blank" class="icon linkedin">LinkedIn</a>
+            <a href="https://www.instagram.com/egm.ch/" target="_blank" class="icon instagram">Instagram</a>
+        
+            <p class="icon email">Email: emanueltbg@hotmail.com</p>
+            <p class="icon whatsapp">WhatsApp: (42) 98831-0277</p>
         </div>
     </footer>
 </body>

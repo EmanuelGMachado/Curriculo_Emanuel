@@ -114,6 +114,35 @@ section ul  {
     margin: 15px 0px;
 }
 
+.curriculo {
+    margin-top: 30px;
+}
+
+.curriculo h2 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 15px;
+}
+
+.curriculo-box {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid var(--cor3);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.curriculo-box iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
 footer {
     background-image: linear-gradient(to bottom, var(--cor5) , var(--cor2));;
     color: white;
@@ -137,10 +166,23 @@ footer > div {
     padding-top: 10px;
 }
 
-footer img {
-    max-height: 1.2em;
-}
-
 footer> div > p {
     padding-top: 10px;
 }
+
+.icon::after {
+    content: "";
+    margin-left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 1.2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+}
+
+.github::after { background-image: url('../imagens/icone-github.png'); }
+.linkedin::after { background-image: url('../imagens/icone-linkedin.png'); }
+.instagram::after { background-image: url('../imagens/icone-instagram.png'); }
+.email::after { background-image: url('../imagens/icone-email.png'); }
+.whatsapp::after { background-image: url('../imagens/icone-whatsapp.png'); }
